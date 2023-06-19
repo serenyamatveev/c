@@ -1,0 +1,49 @@
+nav{
+    text-align: center;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .navigator{
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 5px 15px 5px 15px 
+  }
+  
+  
+  .navigator::before {
+    background: linear-gradient(120deg, #0d8517 0%, #90a310 100%);;
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+  }
+  
+  .navigator:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p {
+  text-align: center;
+  border: 3px solid black;
+  box-shadow: 10px 10px 30px black;
+}
+
+th, tr, table {
+  border: 3px solid black;
+  border-collapse: collapse;
+}
